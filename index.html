@@ -11,9 +11,13 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <script>
-    document.getElementById("bg").src = "latest.png?"+new Date().getTime()
-    </script>
     <img id="bg" src="latest.png" />
+  
+    <script>
+    while(true) {
+        document.getElementById("bg").src = "latest.png?"+new Date().getTime();
+        wait(3000);
+    }
+    </script>
 </body>
 </html>
