@@ -1,0 +1,12 @@
+#bg{
+  width:auto;
+  height:100%;
+  position: absolute; 
+  top: 0; 
+  left: 0;
+  display: block;
+}
+
+body {
+    margin: 0;
+}
