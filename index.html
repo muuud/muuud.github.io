@@ -14,6 +14,13 @@
     <img id="bg" src="latest.png" />
   
     <script>
+    function wait(ms)
+    {
+    var d = new Date();
+    var d2 = null;
+    do { d2 = new Date(); }
+    while(d2-d < ms);
+    }
     while(true) {
         document.getElementById("bg").src = "latest.png?"+new Date().getTime();
         wait(3000);
