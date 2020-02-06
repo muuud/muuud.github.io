@@ -14,12 +14,10 @@
     <img id="bg" src="latest.png" />
   
     <script>
-    while(true) {
-        var d = new Date();
-        var d2 = null;
-        do { d2 = new Date(); }
-        while(d2-d < ms);
-        document.getElementById("bg").src = "latest.png?"+new Date().getTime();
+    var myVar = setInterval(myTimer, 1000);
+    function myTimer() {
+      var d = new Date().getTime();
+      document.getElementById("bg").src = "latest.png?"+d
     }
     </script>
 </body>
